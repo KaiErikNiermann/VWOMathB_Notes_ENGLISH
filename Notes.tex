@@ -1,0 +1,1112 @@
+\documentclass{article}
+\usepackage{multicol}
+\usepackage{bigints}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{booktabs,amsmath,siunitx} 
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+
+\begin{document}
+
+\setlength{\columnsep}{0.3cm}
+\begin{multicols}{3}
+    [
+    \section{main derivatives}
+    main derivatives to remember 
+    ]
+    \[
+    \begin{array}{l}
+        ( f\pm g) \prime =f\prime \pm g\prime \\
+        \\
+        ( f\times g) \prime =f\prime g+fg\prime \\
+        \\
+        \displaystyle   
+        \left(\frac{f}{g}\right) \prime =\frac{f\prime g+fg\prime }{g^{2}} \\
+        \\
+        \displaystyle   
+        \frac{df( u)}{dx} =\frac{df}{du} \times \frac{du}{dx}
+    \end{array}
+    \]
+    \vspace*{\fill}
+    \columnbreak
+    \vspace*{\fill}
+    \[
+    \begin{array}{l}
+        \displaystyle
+        \frac{d}{dx} |u|=\frac{u}{|u|} \times \frac{du}{dx}\\
+        \\
+        \displaystyle 
+        [\log_{a}( x)] \prime =\frac{1}{x\ln( a)}\\
+        \\\relax
+        \displaystyle 
+        [\ln( x)] \prime =\frac{1}{x}\\
+        \\
+        \displaystyle 
+        \left( a^{x}\right)\prime    =a^{x}\ln( a)
+    \end{array}
+    \]
+    \vspace*{\fill}
+    \columnbreak
+    \vspace*{\fill}
+    \[
+    \begin{array}{l}
+        s( t) \ \sim \ position\ \\
+        \\
+        s\prime ( t) \ \sim \ velocity\ \\  
+        \\
+        s\prime \prime ( t) \ \sim \ acceleration\\
+        \\
+        s\prime ( t) \ =\ 0\ \sim \ stationary\\
+        \\
+        f\prime ( x) \  >\ 0\ \sim \ incr.\ /\ right\ mov.\\
+        \\
+        f\prime \prime ( x)  >0\ \sim \ conc.\ up\ /\ incr.\\\
+        \\
+        f\prime \prime ( x) =0\ \sim \ point\ of\ inflection\\
+        \\
+        f\prime ( x) \ < \ 0\ \sim \ decr.\ /\ left\ mov.\\\
+        \\
+        f\prime \prime ( x) < 0\ \sim \ conc.\ down\ /\ decr.\\
+    \end{array}
+    \]
+\end{multicols}
+
+
+
+
+\setlength{\columnsep}{0.1cm} 
+\begin{multicols}{2}
+    \section{tangent line}
+    tangent line to function \(f( x) \ at\ x\ =\ a\)
+    \[
+        \begin{array}{>{\displaystyle}l}  
+        y\ =\ mx\ +\ b\ \\
+        \\
+        y\ =\ f( a) \ \\
+
+        m\ =\ f\prime ( a) \ \\
+
+        x\ =\ a\ \\
+
+        b\ =\ f( a) \ -\ [ f\prime ( a) \ \times \ a]
+    \end{array}
+    \]
+
+    \columnbreak
+    \[
+    \begin{array}{>{\displaystyle}l}  
+        Note\ -\ \\
+        f\prime ( a) \times g\prime ( a) =-1\ ;\ if\ g\prime ( a) =-\frac{1}{f\prime ( a)}
+    \end{array}
+    \]
+\end{multicols}
+
+
+\section{trig notes}
+important trig stuff to remember and trig inverse properties    
+\[\frac{\sin( x)}{\cos( x)} = \tan( x)\]
+
+\[
+\begin{array}{l}
+    (\sin( x)) \prime \ =\ \cos( x)\\
+    (\cos( x)) \prime =-\sin( x)
+\end{array}
+\]
+
+\[
+\begin{array}{l}
+    \sin( x) =a\ \Rightarrow x=\arcsin( a) +2\pi n\ ,\ x\ =\ \pi -\arcsin( a) +2\pi n\\
+    \sin( x) =-a\ \Rightarrow x=\arcsin( -a) +2\pi n\ ,\ x=\pi +\arcsin( a) +2\pi n\\
+    \\
+    \cos( x) =a\ \Rightarrow x=\arccos( a) +2\pi n\ ,\ x\ =-\arccos( a) +2\pi n\\
+    \cos( x) =-a\ \Rightarrow x=\arccos( -a) +2\pi n\ ,\ x=-\arccos( -a) +2\pi n\\
+    \\
+    \tan( x) =a\ \Rightarrow x=\arctan( a) +\pi n\ \\
+    \tan( x) =-a\ \Rightarrow x=\arctan( -a) +\pi n
+\end{array}
+\]
+
+\newpage
+
+\setlength{\columnsep}{1cm} 
+\begin{multicols}{2}
+    [
+    \section{main integrals}
+    main integrals to remember 
+    ]
+    \[
+    \begin{array}{>{\displaystyle}l}  
+        f( x) \ \Leftrightarrow F\prime ( x) \ \\
+        \\
+        \int f( x) dx=F( x) +c\\
+        \\
+        \int ^{b}_{a} f( x) dx=F( b) \ -F( a)\\
+        \\
+        \int ^{b}_{a} cf( x) dx=c\int ^{b}_{a} f( x) dx\\
+        \\
+        \int ^{b}_{a}[ f( x) +g( x)] dx=\int ^{b}_{a} f( x) dx+\int ^{b}_{a} g( x) dx\\
+        \\
+        \int ^{a}_{b} f( x) =-\int ^{b}_{a} f( x) dx\ \\
+        \\
+        \int ^{b}_{a} f( x) g\prime ( x) dx=[ f( x) g( x)]^{b}_{a} -\int ^{b}_{a} f\prime ( x) g( x) dx
+    \end{array}
+    \]
+
+    \columnbreak
+    \vspace*{\fill}
+    \[
+    \begin{array}{>{\displaystyle}l}  
+        \displaystyle 
+        f( x) =x^{\ a} \Rightarrow F( x) =\frac{x^{a+1}}{a+1}\\
+        \\
+        \displaystyle  
+        f( x) =a^{x} \Rightarrow F( x) =\frac{a^{x}}{\ln( a)}\\
+        \\
+        f( x) =e^{x} \Rightarrow F( x) =e^{x}\\
+        \\
+        \displaystyle 
+        f( x) =\frac{1}{x} \Rightarrow F( x) =\ln( |x|)\\
+        \\
+        f( x) =\sin( x) \Rightarrow F( x) =-\cos( x)\\
+        \\
+        f( x) =\cos( x) \Rightarrow F( x) =\sin( x)\\
+        \\
+        \displaystyle 
+        f( x) =\frac{1}{\cos^{2}( x)} \Rightarrow F( x) =\tan( x)\\
+    \end{array}
+    \]
+\end{multicols}
+
+
+
+
+\begin{multicols}{2}
+    
+    \[ 
+    \begin{array}{>{\displaystyle}l}
+        \textbf{u - sub}\\
+        \\
+        \int ^{a}_{b} f( g( x)) g\prime ( x) dx\ \\
+        \\
+        u\ =\ g( x)\\
+        \\
+        du\ =\ g\prime ( x) dx\\
+        \\
+        \therefore k \int ^{g( a)}_{g( b)} f( u) du\ \\
+        \\
+    \end{array}
+    \]
+
+    \columnbreak
+    \vspace*{\fill}
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \textbf{definite integral of absolute value function}\\
+        \\
+        |x|=\begin{cases}
+        x & if\ x\geqslant 0\\
+        -x & ifx< 0
+        \end{cases}\\
+        \\
+        \therefore \int ^{c}_{a} |x|dx=\int ^{b}_{a}( -x) dx+\int ^{c}_{b} xdx\\
+        \\
+        eg.\ \\
+        f( x) =|x+2|=\begin{cases}
+        -( x+2) & if\ x< -2\\
+        x+2 & ifx\geqslant -2
+        \end{cases}\\
+        \\
+        \therefore \int ^{0}_{-4} f( x) dx=\int ^{-2}_{-4} -( x+2) dx+\int ^{0}_{-2}( x+2) dx
+    \end{array}
+    \]
+\end{multicols}
+
+
+\newpage
+
+   
+ \section{Area and (Volume of Revolution)}
+\[
+\begin{array}{>{\displaystyle}l}
+    \\
+    f( x) \ about\ x\ axis\ with\ x\in \ [ a,\ b] \ \Rightarrow \\
+    \\
+    V=\pi \int ^{b}_{a}[ f( x)]^{2} dx\lor V=2\pi \int ^{b}_{a} x[ f( x)] dx\\
+    \\
+    f( x) \ and\ g( x) \ about\ x\ axis\ where\ x\in \ [ a,\ b] \ \ \Rightarrow \\
+    \\
+    V=\pi \int ^{b}_{a}\left[( f( x))^{2} -( g( x))^{2}\right] dx\lor V=2\pi \int ^{d}_{c} y[ g( y) -f( y)] \ ;\ g( y) \geqslant f( y) \ over\ [ c,d] \ \\
+    \\
+    f( x) \ and\ g( x) \ about\ y\ axis\ where\ y\in [ c,\ d] \ \Rightarrow \\
+    \\
+    V=\pi \int ^{d}_{c}\left[( g( y))^{2} -( f( y))^{2}\right] dy\lor V=2\pi \int ^{b}_{a} x[ f( x) -g( x)] dx\ ;\ f( x) \geqslant g( x) \ over\ [ a,\ b]\\
+    \\
+    f( x) \ and\ g( x) \ about\ x=h\ where\ y\in \ [ c,\ d] \Rightarrow \\
+    \\
+    V=\pi \int ^{d}_{c}\left[( h-f( y))^{2} -( h-g( y))^{2}\right] dy\ \lor V=\begin{cases}
+    \displaystyle
+    2\pi \int ^{b}_{a}( x-h)[ f( x) -g( x)] dx & if\ h\leqslant a< b\\
+    \displaystyle
+    2\pi \int ^{b}_{a}( h-x)[ f( x) -g( x)] dx & if\ a< b\leqslant h
+    \end{cases} \ \\
+    \\
+    f( x) \ and\ g( x) \ about\ y=k\ where\ x\in \ [ a,\ b] \ \Rightarrow \\
+    \\
+    V=\pi \int ^{b}_{a}[ k-f( x))^{2} -( k-g( x))^{2}] dx\ \lor V=\begin{cases}
+    \displaystyle
+    2\pi \int ^{d}_{c}( y-k)[ g( y) -f( y)] dx & if\ k\leqslant a< b\\
+    \displaystyle
+    2\pi \int ^{d}_{c}( k-y)[ g( y) -f( y)] dx & if\ a< b\leqslant k
+    \end{cases} \ 
+    \\
+    \\
+    \\
+    Area\ of\ single\ and\ double\ regions\\
+    \\
+    f( x) \ \geqslant g( x) \ over\ x\in [ a,\ b]\\
+    \\
+    A=\int ^{b}_{a}[ f( x) -g( x)] dx\ \\
+    \\
+    f( x) =g( x) \ at\ x=c;\ f( x) \geqslant g( x) \ over\ x\in [ a,\ b] \ and\ g( x) \geqslant f( x) \ over\ x\in [ c,\ d]\\
+    \\
+A=\int ^{b}_{a}[ f( x) -g( x)] dx+\int ^{d}_{c}[ g( x) -f( x)] dx
+\end{array}
+\]
+
+\newpage
+
+\setlength{\columnsep}{2cm}
+\begin{multicols}{2}
+    [
+    \section{Algebra rules}
+    important algebra rules 
+    ]
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \textbf{trig\ rules}\\
+        \cos^{2}( a) +\sin^{2}( a) =1\\
+        \therefore \sin^{2}( a) =1-\cos^{2}( a) \land \cos^{2}( a) =1-\sin^{2}( a)\\
+        \\
+        \cos( a\pm b) =\cos( a)\cos( b) \mp \sin( a)\sin( b)\\
+        \cos( 2a)\\
+        =\cos^{2}( a) -\sin^{2}( a)\\
+        =1-2\sin^{2}( a)\\
+        =2\cos^{2}( a) -1
+        \\
+        \sin( a\pm b) =\sin( a)\cos( b) \pm \cos( a)\sin( b)\\
+        \sin( 2a) =2\sin( a)\cos( a)\\
+        \\
+        \sin( -a) =-\sin( a)\\
+        \cos( -a) =+cos( a)\\
+        \tan( -a) =-\tan( a)\\
+        \\
+        \textbf{triangle\ rules}\\
+        Area=\frac{1}{2} |AB|\times |BC|\\
+        \\
+        \frac{a}{\sin A} =\frac{b}{\sin B} =\frac{c}{\sin C}\\
+        \\
+        c^{2} =a^{2} +b^{2} -2ab\cos C
+        \\
+        
+    \end{array}
+    \]
+    \vspace*{\fill}
+    \columnbreak
+    \vspace*{\fill}
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \textbf{log\ rules}\\
+        a^{x} =b\Leftrightarrow \log_{a}( b) =x\\
+        \\
+        \log_{a}\left( x^{b}\right) =b\log_{a}( x)\\
+        \\
+        \log_{a}\left(\frac{1}{x}\right) =\log_{a}\left( x^{-1}\right) =-\log_{a}( x)\\
+        \\
+        \log_{a}( b) =\frac{\ln( a)}{\ln( b)}\\
+        \\
+        \log_{x}( x) =1\\
+        \\
+        \log_{x}\left(\left(\frac{1}{x}\right)^{n}\right) =\log_{x}\left( x^{-n}\right) =-n\\
+        \\
+        \log_{a^{b}}( x) =\frac{1}{b}\log_{a}( x)\\
+        \\
+        a^{\log_{a}( b)} =b
+    \end{array}
+    \]
+\end{multicols}
+
+\setlength{\columnsep}{3cm}
+\begin{multicols}{3}
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \textbf{exponent\ rules}\\
+        1,\ 1^{a} =1\\
+        \\
+        2,\ a^{0} =1\\
+        \\
+        3,\ ( ab)^{n} =a^{n} b^{n}\\
+        \\
+        4,\ \left( a^{b}\right)^{c} =a^{bc}\\
+        \\
+        5,\ a^{b+c} =a^{b} a^{c}\\
+        \\
+        6,\ 0^{a} =0\\
+        \\
+        7,\ \frac{a^{m}}{a^{n}} =a^{m-n}\\
+        \\
+        8,\left(\frac{a}{b}\right)^{c} =\frac{a^{c}}{b^{c}}
+    \end{array}
+    \]
+    \columnbreak
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \textbf{fraction\ rules}\\
+        1,\frac{0}{a} =0\\
+        \\
+        2,\ \frac{a}{a} =1\\
+        \\
+        3,\ \left(\frac{a}{b}\right)^{-c} =\left(\frac{b}{a}\right)^{c}\\
+        \\
+        4,\ a^{-b} =\frac{1}{a^{b}}\\
+        \\
+        5,\ \frac{\left(\displaystyle \frac{a}{b}\right)}{\left(\displaystyle \frac{c}{d}\right)} =\frac{( a\times d)}{( b\times c)}\\
+        \\
+        6,\ \frac{-a}{-b} =\frac{a}{b}
+    \end{array}
+    \]
+    \columnbreak
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \textbf{radical\ rules}\\
+        1,\ \sqrt{1} =1\\
+        \\
+        2,\ \sqrt[n]{a^{m}} =a^{\frac{m}{n}}\\
+        \\
+        3,\ \sqrt{a}\sqrt{a} =a\\
+        \\
+        4,\ \sqrt[n]{ab} =\sqrt[n]{a}\sqrt[n]{b}\\
+        \\
+        5,\ \sqrt{0} =0\\
+        \\
+        6,\ \sqrt[n]{\frac{a}{b}} =\frac{\sqrt[n]{a}}{\sqrt[n]{b}}\\
+        \\
+        7,\ \frac{a}{\sqrt{b}} =\frac{a\sqrt{b}}{b}
+    \end{array}
+    \]
+\end{multicols}
+
+\[
+\begin{array}{>{\displaystyle}l}
+\mathbf{Rationalizing\ denominators}\\
+\\
+\frac{a}{\sqrt{b}} =\frac{a\sqrt{b}}{b}\\
+\frac{a}{\sqrt{b} \pm c} =\frac{a\left(\sqrt{b} \mp c\right)}{b\mp c^{2}}
+\end{array}    
+\]
+
+\newpage
+
+
+    \section{Solving Inequalities}
+\[
+\begin{array}{>{\displaystyle}l}
+    \\
+    \textbf{linear}\\
+    1,\ rewrite\ equation\ in\ terms\ of\ x\\
+    \\
+    \textbf{quadratic}\\
+    1,\ write\ polynomial\ in\ correct\ form\ \sim \ eg.\ ax^{2} +bx+c\  >0\\
+    2,\ find\ critical\ values\ AKA\ set\ equation\ =\ 0\ \\
+    3,\ plug\ in\ values\ above\ /\ below\ critical\ values\ and\ see\ if\ they\ satisfy\ the\ inequality\ \\
+    4,\ create\ the\ intervals\ that\ satify\ the\ inequality\\
+    \\
+    \textbf{rational}\\
+    1,\ write\ equation\ in\ correct\ from\ \sim \ \ \\
+    \frac{f( x)}{g( x)} < 0\ \\
+    \\
+    2,\ find\ critical\ values\ \sim \ \\
+    f( x) =0\Rightarrow x=a\ \\
+    g( x) =0\Rightarrow x=b\\
+    \\
+    3,\ plug\ in\ values\ above\ /\ below\ critical\ values\ and\ see\ if\ they\ satisfy\ the\ inequality\ \\
+    \\
+    4,\ create\ the\ intervals\ that\ satify\ the\ inequality\\
+    \\
+    \textbf{absolute\ value\ }\\
+    Given\ |u| >a\ with\ a\in \mathbb{R}^{+}\\
+    \\
+    \Rightarrow u< -a\ \lor u >a\\
+    \\
+    Given\ |u|< a\ with\ a\in \mathbb{R}^{+ }\\
+    \\
+    \Rightarrow -a< u< a
+    \\
+    \textbf{logarithmic\ }\\
+    \mathbf{for\ a >1}\\
+    1,\ \log_{a}( f( x)) \leqslant \log_{a}( g( x)) \ \Leftrightarrow f( x) \leqslant g( x) ,\ f( x)  >0\\
+    2,\ \log_{a}( f( x)) \geqslant \log_{a}( g( x)) \ \Leftrightarrow f( x) \geqslant g( x) ,\ g( x)  >0\\
+    \\
+    \mathbf{for\ a< 1}\\
+    1,\ \log_{a}( f( x)) \leqslant \log_{a}( g( x)) \ \Leftrightarrow f( x) \geqslant g( x) ,\ f( x)  >0\\
+    2,\ \log_{a}( f( x)) \geqslant \log_{a}( g( x)) \ \Leftrightarrow f( x) \leqslant g( x) ,\ g( x)  >0\\
+    \\
+    \mathbf{square\ root}\\
+    \sqrt{f( x)} \leqslant g( x) \ \Rightarrow f( x)  >0\land g( x) \geqslant 0\\
+    \\
+    \sqrt{f( x)} \geqslant g( x) \Rightarrow f( x)  >0\land g( x) \geqslant 0\ \land g( x) < 0\\
+    \\
+    Note\ -\ u^{n}  >a\Rightarrow u< -\sqrt[n]{a} \land u >\sqrt[n]{a}
+\end{array} 
+\]
+   
+Note\ -\ multiplying\ or\ dividing\ by\ a\ negative\ number\ flips\ the\ sign
+
+\newpage
+
+\section{Parametric Calculus and Vectors}
+
+\setlength{\columnsep}{0.5cm}
+\begin{multicols}{2}
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \textbf{Tangent\ line}\\
+        \\
+        x( t) =x, \ y( t) =y \ at\ t=a\ or\ ( x_t, y_t)\\
+        \\
+        tangent\ in\ point\ slope\ form\ \\
+        \\
+        y-y_{0} =m( x-x_{0})\\
+        \\
+        y_{0} =y( a)\\
+        x_{0} =x( a)\\
+        \\
+        m=\frac{y\prime ( a)}{x\prime ( a)}\\
+        \\
+        vertical\ at\ x\prime ( t) =0\land y\prime ( t) \neq 0\ \\
+        \\
+        horizontal\ at\ y\prime ( t) =0\land x\prime ( t) \neq 0
+    \end{array}
+    \]
+    \columnbreak
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \textbf{Angle\ between\ tangent\ lines/vectors}\\
+        lines, \\
+        \tan a=\frac{|m_{1} -m_{2} |}{|1+m_{1} m_{2} |}\\
+        \therefore a=\arctan\left(\frac{|m_{1} -m_{2} |}{|1+m_{1} m_{2} |}\right)\\
+        \\
+        vectors, \ \\
+        \cos a=\frac{\vec{a} \times \vec{b}}{||\vec{a} ||\times ||\vec{b} ||}\\
+        \therefore a=\arccos=\left(\frac{\vec{a}\ \cdotp\ \vec{b}}{||\vec{a} ||\times ||\vec{b} ||}\right)\\
+    \end{array}
+    \]
+\end{multicols}
+
+\setlength{\columnsep}{0.1cm} 
+\begin{multicols}{2}
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \textbf{Area\ and\ Length\ ( Distance) \ }\\
+        Given\ \\
+        x( t) =x\\
+        y( t) =y\\
+        \\
+        t\in [ a,\ b]\\
+        \\
+        A=\int ^{b}_{a} y( t) x\prime ( t) dt\\
+        \\
+        L=\int ^{b}_{a}\sqrt{[ x\prime ( t)]^{2} +[ y\prime ( t)]^{2}} dt\\
+        \\
+        \textbf{Velocity,\ Speed, Acceleration\ }\\
+        velocity\ \\
+        v( t) =\begin{pmatrix}
+        x\prime ( t)\\
+        y\prime ( t)
+        \end{pmatrix} \ \ ;\ v_{x}( t) =\begin{pmatrix}
+        x\prime ( t)\\
+        0
+        \end{pmatrix} \ ;\ v_{y}( t) =\begin{pmatrix}
+        0\\
+        y\prime ( t)
+        \end{pmatrix}
+        \\
+        speed\ \\
+        ||\overrightarrow{v( t)} ||=\sqrt{[ x\prime ( t)]^{2} +[ y\prime ( t)]^{2}}\\
+        \\
+        extreme\ \\
+        ||\overrightarrow{v\prime ( t)} ||=0\ \Rightarrow t=n\\
+        \\
+        ||v( n) ||=a\ ;\ a=max/min\ speed\\
+        \\
+        acceleration\\
+        a( t) =\begin{pmatrix}
+        x\prime \prime ( t)\\
+        y\prime \prime ( t)
+        \end{pmatrix}\\
+        \\
+        Note\ -\ \\
+        \mathbf{second\ derivative}\\
+        \frac{d^{2} y}{dx^{2}} =\frac{\displaystyle \frac{d}{dt}\left[\displaystyle \frac{dy}{dx}\right]}{\displaystyle \frac{dx}{dt}} =\displaystyle  \frac{\left(\displaystyle \frac{y\prime \prime ( t)}{x\prime \prime ( t)}\right)}{x\prime \prime ( t)}    
+    \end{array}
+    \]
+    \columnbreak
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}c}
+        \textbf{Vector\ summary\ notes\ }\\
+        \\
+        \textbf{1, addition\ and\ subtraction}\\
+        \begin{pmatrix}
+        a_{1}\\
+        a_{2}
+        \end{pmatrix} \pm \begin{pmatrix}
+        b_{1}\\
+        b_{2}
+        \end{pmatrix} =\begin{pmatrix}
+        a_{1} \pm b_{1}\\
+        a_{2} \pm b_{2}
+        \end{pmatrix}\\
+        \\
+        \textbf{2, magnitude\ ( length)}\\
+        ||\vec{a} ||=\sqrt{[ a_{1}]^{2} +[ a_{2}]^{2}}\\
+        \\
+        \textbf{3, scalar$\times$vector}\\
+        n\times \begin{pmatrix}
+        a_{1}\\
+        a_{2}
+        \end{pmatrix} =\begin{pmatrix}
+        na_{1}\\
+        na_{2}
+        \end{pmatrix}\\
+        \\
+        \textbf{4, vector$\times$vector}\\
+        \begin{pmatrix}
+        a_{1}\\
+        a_{2}
+        \end{pmatrix} \times \begin{pmatrix}
+        b_{1}\\
+        b_{2}
+        \end{pmatrix} =( a_{1} \times b_{1}) +( a_{2} \times b_{2})\\
+        \\
+        \textbf{5, perpendicular\ vectors}\\
+        \vec{a} \perp \vec{b} \Leftrightarrow \vec{a} \times \vec{b} =0\\
+        \\
+        \textbf{6, vector\ equation\ of\ line}\\
+        y=mx+b\Leftrightarrow r=\begin{pmatrix}
+        x\\
+        y
+        \end{pmatrix} +t\begin{pmatrix}
+        run\\
+        rise
+        \end{pmatrix} {x,\ y\ are\ points\ on\ y}\\
+        \\
+        \textbf{7, vector\ to\ general\ form\ linear\ eq.}\\
+        \\
+        \vec{v} =\begin{pmatrix}
+        \pm a\\
+        \pm b
+        \end{pmatrix} \Leftrightarrow [ \mp bx] +[ \pm ay] =c\\
+        \\
+        ( x,\ y) \in \{all\ points\ \ on\ \vec{v}\}\\
+        \\
+        \textbf{8, angles\ between\ to\ vectors}\\
+        A( x_{a} ,\ y_{a}) \Leftrightarrow \begin{pmatrix}
+        x_{a}\\
+        \ y_{a}
+        \end{pmatrix} ,\ B( x_{b} ,\ y_{b}) \Leftrightarrow \begin{pmatrix}
+        x_{b}\\
+        \ y_{b}
+        \end{pmatrix} ,\ C( x_{c} ,\ y_{c}) \Leftrightarrow \begin{pmatrix}
+        x_{c}\\
+        \ y_{c}
+        \end{pmatrix}\\
+        \\
+        \angle ABC\ =angle\ between\ \overrightarrow{BA} \ and\ \overrightarrow{BC}\\
+        \\
+        Note\ -\ vector\ from\ any\ point\ A\ to\ any\ point\ B\ given\ by\ \\
+        \\
+        \overrightarrow{AB} =\vec{b} - \vec{a} =\begin{pmatrix}
+        x_{b} - x_{a}\\
+        \ y_{b} - \ y_{a}
+        \end{pmatrix}
+    \end{array}
+    \]
+\end{multicols}
+
+
+
+\newpage 
+
+\section{Coordinate Geometry and Circle Equations}
+
+\setlength{\columnsep}{3cm}
+\begin{multicols}{2}
+    \noindent 
+    \[
+        \\
+        \\
+    \begin{array}{>{\displaystyle}l}
+        \centerline{$\textbf{Circle\ equations}$}\\
+        general\ form.\ \sim \ x^{2} +y^{2} +2gx+2fy+c=0\\
+        \\
+        center\ =\ ( -g,-f) \land radius=\sqrt{g^{2} +f^{2} -c} \ \\
+        \\
+        center-radius\ form\\
+        ( x-h)^{2} +( y-k)^{2} =r^{2}\\
+        \\
+        center=( h,\ k) \ \land \ radius=r\\
+        \\
+        Given\\
+        A( x_{1} ,\ y_{1}),\ C( x_{3} ,\ y_{3}),\ B( x_{2} ,\ y_{2})\\
+        \\
+        \textbf{Algebraic\ approach\ to\ find\ eq.} \\
+        \text{1,\ sub\ A,\ B,\ C\ into\ general\ form\ to\ create\ 3\ eq.} \\
+        \text{2,\ solve\ equations\ for\ missing\ f,\ g,\ c} \\
+        \\
+        \textbf{Geometric\ approach\ to\ find\ eq.} \\
+        \text{1,\ create\ perpendicular\ bisector\ for\ AB\ and\ BC} \\
+        2,\ PB_{1} =PB_{2} \ then\ solve\ for\ x\\
+        3,\ PB_{1}( x) =y\\
+        4,\ \therefore center( x,\ y) =( h,\ k)\\
+        5,\ r=d( center,\ A/B/C)\\
+        \\
+        \textbf{Tangent line at point}\ \\
+        Given,\ Center=C( x_{c} ,\ y_{c}) ,\ Point=P( x_{p} ,\ y_{p})\\
+        \\
+        tangent\ eq.\ at\ P\ \sim \\
+        l:( x_{c} -x_{p})( x-x_{p}) +( y_{c} -y_{p})( y-y_{p}) =0
+    \end{array}
+    \]
+    \columnbreak
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \centerline{$\mathbf{Intersections\ }$}\\
+        \centerline{$\mathbf{two\ lines\ }$}\\
+        y=ax+b\\
+        y=cx+d\\
+        \\
+        1,\ ax+b=cx+d\ [ make\ equations\ equal]\\
+        2,\ x=\left(\frac{d-b}{a-c}\right) \ [ solve\ for\ x]\\
+        3,\ y=m\left(\frac{d-b}{a-c}\right) +b\ [ sub\ x\ into\ line\ eq.]\\
+        \\
+        Note\ -\ f\prime ( x) =g\prime ( x)\ when\ touching\\
+        \\
+        \centerline{$\mathbf{line\ and\ circle\ }$}\\
+        y_{l} =mx+b\\
+        x^{2} +y^{2} +2gx+2fy+c=0\\
+        \\
+        {1,\ x^{2} +y_{l}}^{2} +2gx+2fy_{l} +c=0\ [ sub\ line\ eq.]\\
+        2,\ x_{i} =n\ [ solve\ for\ x_{i}]\\
+        3,\ y_{i} =m( n) +b\ [ sub\ x_{i} \ into\ line\ eq.]\\
+        \\
+        \centerline{$\mathbf{circle\ and\ circle\ }$}\\
+        a,\ x^{2} +y^{2} +2gx+2fy+c=0\\
+        b,\ x^{2} +y^{2} +2gx+2fy+c=0\\
+        \\
+        1,\ a-( b) \ [ subtract\ eq.\ b\ from\ a]\\
+        2,\ y=mx+b\ [ reqwrite\ into\ line\ eq.]\\
+        3,\ x_{i} =a( mx+b) \ [ sub\ line\ eq.\ into\ a\ /\ b]\\
+        4,\ y_{i} =x_{i} m+b\ [ sub\ x-int.\ into\ line\ eq.]\\
+        \\
+    \end{array} 
+    \]
+\end{multicols}
+
+\setlength{\columnsep}{2cm}
+\begin{multicols}{2}
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \textbf{Line\ equations}\\
+        general\ form.\ \sim \ ax+by+c=0\\
+        \\
+        \textbf{Given,} \\
+        A( x_{1} ,\ y_{1})\\
+        B( x_{2} ,\ y_{2})\\
+        \\
+        slope\ =m=\frac{y_{2} -y_{1}}{x_{2} -x_{1}}\\
+        \\
+        \therefore line\ equation\ \\
+        y-y_{1} =m( x-x_{1})\\
+        \\
+        \textbf{Given,} \\
+        x-int.=a\\
+        y-int.=b\\
+        \\
+        \therefore line\ equation\ \\
+        \frac{1}{a} x+\frac{1}{b} y=1\\
+    \end{array}
+    \]
+    \columnbreak
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}c}
+        \\
+        \\
+        \centerline{$\textbf{Line\ and\ Point\ formulae}$} \\
+        \centerline{$A( x_{1} ,\ y_{1})$}\\
+        \centerline{$B( x_{2} ,\ y_{2})$}\\
+        \centerline{$line\ :\ Ax+By+C=0$}\\
+        \\
+        \textbf{distance\ A\ to\ B}\\
+        d( A,\ B) =\sqrt{( x_{2} -x_{1})^{2} +( y_{2} -y_{1})^{2}}\\
+        \\
+        \textbf{midpoint\ A\ to\ B} \\
+        M=\left(\frac{x_{1} +x_{2}}{2} ,\ \frac{y_{1} +y_{2}}{2}\right)\\
+        \\
+        \textbf{distance\ A\ to\ line} \\
+        d=\frac{|Ax_{1} +By_{1} +C|}{\sqrt{A^{2} +B^{2}}}
+    \end{array}
+    \]
+\end{multicols}
+
+\newpage
+
+\section{properties of functions}
+
+\setlength{\columnsep}{4cm}
+\begin{multicols}{2}
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \textbf{Asymptotes\ of\ rational\ functions}\\
+        HA\ defined\ as\ \lim _{|x|\rightarrow \infty } f( x)\\
+        \\
+        \mathbf{method\ }\\
+        f( x) =\frac{x^{2}}{x^{2}} \Rightarrow HA:\ at\ y=\frac{a}{b}\\
+        \\
+        f( x) =\frac{x^{3}}{x^{2}} \Rightarrow HA\ ( slant) :\ at\ y=mx+b\ \\
+        \\
+        f( x) =\frac{ax^{2}}{bx^{3}} \Rightarrow HA:\ at\ y=0\\
+        \\
+        f( x) =\frac{x^{4}}{x^{2}} \Rightarrow HA:\ no\ asymptote\\\ 
+        \\
+        VA\ defined\ as\ 
+        \begin{cases}
+        \displaystyle \lim _{|x|\rightarrow a^{-}} f( x) =\pm \infty \\
+        \displaystyle \lim _{|x|\rightarrow a^{+}} f( x) =\pm \infty 
+        \end{cases}\\
+        \\
+        \mathbf{method\ }\\
+        Find\ where\ function\ becomes\ undef.\ 
+    \end{array}
+    \]
+    \columnbreak
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \textbf{Long\ division} \\
+        \\
+        eg.\ y=\frac{x^{3} -2x}{x^{2} -5}\\
+        \\
+        1,\ divide\ leading\ coefficients\ \\
+        \therefore \frac{x^{3}}{x^{2}} =x\\
+        \\
+        2,\ multiply\ bottom\ by\ 1,\ \\
+        \therefore x\times \left( x^{2} -5\right) =x^{3} -5x\\
+        \\
+        3,\ subtract\ top\ from\ 2,\ \\
+        \therefore x^{3} -2x-\left( x^{3} -5x\right) =3x\\
+        \\
+        4,\ answer\ \\
+        1,\ +\ \frac{3,}{denominator}\\
+        \\
+        Note\ -\ repeat\ 1,\ to\ 3,\ if\ 3,\ degree\  >\ 1\ 
+    \end{array}
+    \]
+\end{multicols}
+
+\setlength{\columnsep}{7cm}
+\begin{multicols}{2}
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \\
+        \\
+        \centerline{\textbf{Function\ transformation}} \\
+        1,\ f( x+c) \Rightarrow ( y,\ x+c) \ ;\ c< 0\ right,\ c >0\ left\\
+        \\
+        2,\ f( x) +c\Rightarrow ( y+c,\ x) ;\ c< 0\ down\ ,\ c >up\ \\
+        \\
+        3,\ cf( x) \Rightarrow ( cy,\ x) ;\ 0< c< 1\ compress,\ c >1\ strech\\
+        \\
+        4,\ f( cx) \Rightarrow ( y,\ cx) ;\ 0< c< 1\ strech,\ c >1\ compress\ \\
+        \\
+        5,\ -f( x) \Rightarrow ( -y,\ x) ;\ reflext\ along\ x-axis\ \\
+        \\
+        6,\ f( -x) \Rightarrow ( y,\ -x) ;\ reflect\ along\ y-axis
+    \end{array}
+    \]
+    \columnbreak
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \\
+        \\
+        \textbf{Undefined}\\
+        1,\ 0^{0} =und.\ \\
+        \\
+        2,\ \frac{x}{0} =und.\\
+        \\
+        3,\ log_{a}( b) =und.\ if\ a\leqslant 0\ \lor b\leqslant 0\\
+        \\
+        4,\ log_{1}( a) =\ und.
+        \\
+        \\
+        \\
+        \\
+        \mathbf{Trig.\ transformations}\\
+        \sin( x) =\cos\left( x-\frac{\pi }{2}\right)\\
+        -\sin( x) =\sin( -x) =\sin( x\pm \pi )\\
+        \\
+        \cos( x) =\sin\left( x+\frac{\pi }{2}\right)\\
+        -\cos( x) =\cos( x\pm \pi )
+    \end{array}
+    \]
+\end{multicols}
+
+\newpage 
+
+\section{Misc Notes}
+
+
+\setlength{\columnsep}{6cm}
+\begin{multicols}{2}
+    \noindent 
+    \[
+        \begin{array}{>{\displaystyle}l}
+        \\
+        \mathbf{Absolute\ Value\ Equations\ }\\
+
+        Given\ |f( x) |=g( x)\\
+        \\
+        1,find\ the\ intervals\ of\ |f( x)|\\
+        \\
+        2,\ solve\ for\ -f( x) =g( x) \land f( x) =g( x) \\
+        \\
+        3,\ validate\ solutions\ for\ the\ intervals\\
+        \\
+        eg.\ \\
+        |x^{3} -3x^{2} |=2x\\
+        \\
+        1,\ |x^{3} -3x^{2} |=\begin{cases}
+        \left( x^{3} -3x^{2}\right) & f( x)  >0\ for\ x >3\\
+        -\left( x^{3} -3x^{2}\right) & f( x) \leqslant 0\ for\ x< 0\lor 0\leqslant x< 3
+        \end{cases}\\
+        \\
+        2,\ for\ f( x) \leqslant 0\ solve,\ -\left( x^{3} -3x^{2}\right) =2x\ \Rightarrow x =0,\ x_{1,\ 2} =\pm n \\
+        \therefore Note\ -\ [ x_{2} \ is\ not\ valid]\\
+        \\
+        3,\ for\ f( x) \  >0\ solve,\ \left( x^{3} -3x^{2}\right) =2x\ \Rightarrow x_{1,\ 2,\ 3} =0,\ 1,\ 2\ \\
+        \therefore Note\ -\ [ x_{1} \ is\ not\ valid]\\
+        \\
+    \end{array}    
+    \]
+    \columnbreak
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}l}
+    \mathbf{Trigonometric\ inequalities}\\
+    1,\ \mathbf{\sin x} \ \sim \ Note\ -\ < \ x\ < \\
+    \mathbf{\geqslant a}\\
+    \arcsin( a) +2\pi n\leqslant x\leqslant \pi -\arcsin( a) +2\pi n\\
+    \\
+    \mathbf{\leqslant a}\\
+    -\pi -\arcsin( a) +2\pi n\leqslant x\leqslant \arcsin( a) +2\pi n\\
+    \\
+    \\
+    2,\ \mathbf{\cos x} \ \sim \ Note\ -\ < \ x\ < \\
+    \mathbf{\geqslant a}\\
+    -\arccos( a) +2\pi n\leqslant x\leqslant \arccos( a) +2\pi n\\
+    \\
+    \mathbf{\leqslant a}\\
+    -\arccos( a) +2\pi n\leqslant x\leqslant 2\pi -\arccos( a) +2\pi n\\
+    \\
+    3,\ \mathbf{\tan x} \sim \ Note\ -\ < \ x\ < \\
+    \mathbf{\geqslant a}\\
+    \arctan( a) +\pi n\leqslant x< \frac{\pi }{2} +\pi n\\
+    \\
+    \mathbf{\leqslant a}\\
+    -\frac{\pi }{2} +\pi n< x\leqslant -\arctan( a) +\pi n
+    \end{array}
+    \]
+\end{multicols}
+
+\setlength{\columnsep}{0.7cm}
+\begin{multicols}{2}
+    \noindent 
+    \begin{center}
+    $\displaystyle  \begin{array}{{>{\displaystyle}l}}
+    \centerline{$\mathbf{Trig\ Equations}$}\\
+    \sin x=\sin a\Leftrightarrow x=a+2\pi n\lor x=\pi -a+2\pi n\\
+    \\
+    \cos x=\cos a\Leftrightarrow x=a+2\pi n\lor x=-a+2\pi n\\
+    \\
+    \tan x=\tan a\Leftrightarrow x=a+\pi n
+    \end{array}$
+    \begin{tabular}{cccc}
+    \\
+    \\
+    \toprule 
+    & $\displaystyle \frac{\pi }{3}$ & $\displaystyle \frac{\pi }{4}$ & $\displaystyle \frac{\pi }{6}$ \\
+    \midrule 
+    $\displaystyle \sin x$ & $\displaystyle \frac{\sqrt{3}}{2}$ & $\displaystyle \frac{\sqrt{2}}{2}$ & $\displaystyle \frac{1}{2}$ \\
+    \\
+    $\displaystyle \cos x$ & $\displaystyle \frac{1}{2}$ & $\displaystyle \frac{\sqrt{2}}{2}$ & $\displaystyle \frac{\sqrt{3}}{2}$ \\
+    \\
+    $\displaystyle \tan x$ & $\displaystyle \sqrt{3}$ & $\displaystyle 1$ & $\displaystyle \frac{1}{\sqrt{3}}$ \\
+    \bottomrule
+    \end{tabular}
+    $\displaystyle \begin{array}{>{\displaystyle}l}
+        \\
+        \\
+    \mathbf{Optimization\ } \sim \ distances\\
+    f( x) \geqslant g( x) \ over\ x\in [ a,\ b]\\
+    \\
+    D( x) \ =f( x) -g( x)\\
+    \\
+    ( f( x) -g( x)) \prime =0\Rightarrow x=n\\
+    \\
+    D( n) =y -  distance\\
+    \\
+    Note\ -\ if\ ( f( x) -g( x)) \prime =0\Rightarrow x=n\land x=z\ with\ z< r\\
+    z=min\ and\ r=max\ over\ x\in [ a,\ b]
+    \end{array}$
+    \end{center}
+
+    \columnbreak
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \\
+        \\
+        \\
+        \centerline{$\mathbf{Factoring\ Cubic\ Polynomials}$}\\
+        \centerline{$\mathbf{By\ grouping\ }$}\\
+        f( x) =x^{3} -4x^{2} +3x-12\\
+        \\
+        =\left( x^{3} -4x^{2}\right) +( 3x-12)\\
+        =x^{2}( x-4) +3( x-4)\\
+        =\left( x^{2} +3\right)( x-4)\\
+        \\
+        \centerline{$\mathbf{Rational\ Root\ Theorem\ }$}\\
+        f( x) =a_{3} x^{3} +a_{2} x^{2} +a_{1} x+a_{0} \ assuming\ \{a_{1,\ 2,\ 3,\ 0}\} \in Q\\
+        \\
+        1,\ roots=\pm \frac{factors\ of\ a_{0}}{factors\ of\ a_{3}} =\pm \{r_{1} ,...,r_{n}\}\\
+        \\
+        2,\ check\ all\ possible\ zeros\ via\ sub.of\ r\ into\ p( x) \ \\
+        \\
+        p( r) =0\\
+        \\
+        \therefore \frac{p( x)}{x\pm r} =ax^{2} +bx+c\\
+        \therefore p( x) =( x\pm r)\left( ax^{2} +bx+c\right)\\
+        \therefore p( x) =( x\pm r)( p\pm x)( q\pm x) \ [ factor\ standard\ quadratic]
+        \\
+    \end{array}
+    \]
+\end{multicols}
+
+\newpage
+
+\section{Misc Notes ~ 2}
+
+\begin{multicols}{2}
+    \textbf{Uneven segment formula}
+    \[
+    \begin{array}{>{\displaystyle}l}
+        P( x,\ y) \ devides\ line\ A( x_{a} ,\ y_{b}) \ to\ B( x_{b} ,\ y_{b}) \ by\ ratio\ m\ :\ n\\
+        \\
+        P( x,\ y) \ =\ \left(\frac{mx_{b} +nx_{a}}{m+n} ,\ \frac{my_{b} +ny_{a}}{m+n}\right)\\
+        \\
+        eg.\ A( 2,\ 3) \ ;\ B( 4,\ -8) \ ratio\ =\ \frac{1}{3} \ :\ \frac{2}{3}\\
+        \\
+        P( x,\ y) \ =\ \ \left(\frac{\ \frac{1}{3}( 4) +\frac{2}{3}( 2)}{\frac{1}{3} +\frac{2}{3}} ,\ \frac{\ \frac{1}{3}( -8) +\frac{2}{3}( 3)}{\frac{1}{3} +\frac{2}{3}}\right)\\
+        \\ 
+        \therefore P( x,\ y) =\left(\frac{8}{3} ,\ -\frac{2}{3}\right)
+    \end{array}
+    \]
+    \columnbreak
+    \noindent 
+    \[
+    \begin{array}{>{\displaystyle}l}
+        \textbf{simple formulas}\\
+        \\
+        \mathbf{Circle}\\
+        Circumference\ =\ 2\pi r\\
+        Area\ =\ \pi r^{2}\\
+        \\
+        \mathbf{Cylinder}\\
+        Volume\ =\ \pi r^{2} h
+    \end{array}
+    \]
+\end{multicols}
+
+
+
+\begin{flushleft}
+\textbf{Problem solving approaches general}\\
+1, remember to write out what you are doing a little\\
+\hfill \\
+calculus\\ 
+1, visually understand the problem as much as you can\\
+2, remember to apply everything as accuratly as possible\\ 
+3, remember most problems you will face require substitution\\
+\hfill \\
+geometry\\
+1, if you get confused remember to draw triangles\\
+2, always draw the problem to get a better understanding of it\\ 
+3, remember to apply circle theorems when possible\\
+\hfill \\
+vectors\\ 
+1, vectors need to be constructed differently depending on use\\ 
+2, vector addition can be used to find points (in certain circumstances)\\ 
+\hfill \\
+trigonometry\\
+1, if you are asked to find all solutions in an interval, find ALL\\ 
+2, remember that triangles also often come into play here
+\end{flushleft}
+
+\[ 
+\begin{array}{>{\displaystyle}l}
+    \mathbf{Rules\ to\ only\ apply\ in\ specific\ circumstances}\\
+    \\
+    \mathbf{Notes\ -\ If\ the\ integrand\ is\ a\ trig.\ func.\ with\ a\ power\  >1\ then\ you\ have\ to\ rewrite\ }\\
+    \int \cos^{2}( x) dx=\int \frac{1}{2} +\frac{1}{2}\cos( 2x) dx=\frac{1}{2}\int 1+\cos( 2x) =\frac{1}{2}\left( 1+\frac{1}{2}\sin( 2x)\right)\\
+    using\ the\ relationship\ \sim \\
+    \\
+    cos( 2x) =2cos^{2}( x) -1\\
+    \\
+    \mathbf{Notes\ -\ If\ the\ denominator\ power\neq 1\ then\ do\ not\ use\ \frac{1}{x} \Rightarrow \ln( |x|) \ }\\
+    \int \frac{1}{\sqrt{x}} dx=\int x^{-\frac{1}{2}} dx=\frac{x^{-\frac{1}{2} +1}}{-\frac{1}{2} +1} =-2x^{\frac{1}{2}}\\
+    \\
+\end{array}
+\]
+
+\end{document}
