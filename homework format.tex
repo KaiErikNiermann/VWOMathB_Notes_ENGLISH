@@ -1,0 +1,66 @@
+\documentclass{article}%
+\usepackage{amsmath}%
+\usepackage{amsfonts}%
+\usepackage{amssymb}%
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}\usepackage{listings}
+\usepackage{color}
+%-------------------------------------------
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\setlength{\textwidth}{7.0in}
+\setlength{\oddsidemargin}{-0.35in}
+\setlength{\topmargin}{-0.5in}
+\setlength{\textheight}{9.0in}
+\setlength{\parindent}{0.3in}
+
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+  language=C++,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  keywordstyle=,
+  breaklines=true,m
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+
+\begin{flushright}
+\textbf{Kai Erik Niermann \\
+September 1, 2021}
+\end{flushright}
+
+\begin{center}
+\textbf{CS - CTfC \\
+Homework 1.1: Fibonacci numbers} \\
+\end{center}
+
+This solution is limited because it calculates calls its already made. Though in terms of intuitive understanding I think the recursive approach
+is better because it directly implements the formula \(F_{n} =F_{n-1} +F_{n-2}\)
+
+\section*{solution}
+
+\begin{lstlisting}[]
+  //calculates any Nth fib number
+  function fib that takes int N 
+        if N <= 1 
+        return N
+        else 
+        return with call fib(N - 1) + fib(N - 2) 
+
+  get input A
+
+  //prints all fib num from 0 to A
+  for X times from 0 to A
+        print output from call fib with X as parameter
+\end{lstlisting}
+
+  
+\end{document}
